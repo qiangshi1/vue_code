@@ -1,0 +1,37 @@
+<!-- 添加key v-for -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <!-- app.items.splice(2,2),在第2个位置开始删除2个元素 -->
+        <ul>
+            <li v-for="i in items">{{i}}</li>
+        </ul>
+        <!-- 加入key的话插入的时候更加高效，key一般是value本身？ -->
+        <ul>
+            <li v-for="i in items" :key="i">{{i}}</li>
+        </ul>
+    </div>
+    <script src="../js/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#app',  
+            data: {
+                items:[
+                    'why',
+                    'yes',
+                    'OK',
+                    'go'
+                ]
+            },
+            methods: {
+            }
+        })
+    </script>
+</body>
+
+</html>

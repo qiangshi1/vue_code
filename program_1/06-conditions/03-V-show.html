@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <!-- v-if做的是：创建删除 -->
+        <h2 v-if="isShow">{{message1}}</h2>
+        <!-- v-show做的是：为false时增加样式display -->
+        <!-- 切换频率高时用v-show，它的效率更高 -->
+        <h2 v-show="isShow">{{message1}}</h2>
+    </div>
+    <script src="../js/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#app',  
+            data: { 
+                message1: '你好啊',
+                isShow: true
+                
+            },
+            methods: {
+            }
+        })
+    </script>
+</body>
+
+</html>

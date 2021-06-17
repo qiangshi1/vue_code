@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- 字号 -->
+        <h2>{{message}}<h2> 
+        <h1>Hello {{name}}<h1> 
+    </div>
+    <div>{{message}}</div>
+    <script src="../js/vue.js"></script>
+    <script>
+        //let(变量)/const(常量),建议不要使用var
+        let app = new Vue({
+            el: '#app', //用于挂载要管理的元素(上边的div)
+            data: { //定义一些数据
+                message: '你好啊,李银河!', //和上边div的message关联起来,声明式编程
+                name: 'shiqiang'
+            }
+        })
+    </script>
+
+
+</body>
+
+</html>

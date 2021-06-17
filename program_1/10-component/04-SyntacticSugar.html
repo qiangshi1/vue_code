@@ -1,0 +1,47 @@
+<!-- 组件化的语法糖 -->
+<!-- 实际开发之中 更加会使用语法糖 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <!-- 2. 使用组建 -->
+        <my-cpn></my-cpn>
+        <my-cpn2></my-cpn2>
+    </div>
+    <script src="../js/vue.js"></script>
+    <script>
+        // 1. 语法糖形式 创建组建+注册全局组件
+        Vue.component('my-cpn',{
+            template:
+            `<div>
+                <h2>我是全局组件</h2>
+                <p>我是内容</p>
+                <p>我是内容2</p>
+            </div>`
+        })
+        const app = new Vue({
+            el: '#app',  
+            data: { 
+            },
+            methods: {
+            },
+            // 1. 语法糖形式 创建组建+注册局部组件
+            components: {
+                'my-cpn2': {
+                    template:
+                    `<div>
+                        <h2>我是局部组件</h2>
+                        <p>我是内容</p>
+                        <p>我是内容2</p>
+                    </div>`
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!--  watch 监听值改变 地位等同于props、data-->
+<!-- 后文没改， -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+
+<body>
+    <div id="app">
+        <cpn :number1="num1" :number2="num2" @num1change="num1Change" @num2change="num2Change"></cpn>
+    </div>
+
+    <template id="cpn">
+        <div>
+            <h2>props {{number1}}</h2>
+            <h2>data {{dnumber1}}</h2>
+            <input type="text" v-model="dnumber1" @input="num1Input">
+            <h2>props {{number2}}</h2>
+            <h2>data {{dnumber2}}</h2>
+            <input type="text" v-model="dnumber2" @input="num2Input">
+        </div>
+    </template>
+
+    <script src="../js/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#app',
+            data: {
+                num1: 1,
+                num2: 2,
+                num3: 3,
+                num4: this.num3,
+            },
+            methods:{
+                num1Change(num){
+                    this.num1=num;
+                },
+                num2Change(num){
+                    this.num2=num;
+                }
+            },
+            components: {
+                cpn: {
+                    template: '#cpn',
+                    data(){
+                        return{
+                            dnumber1: this.number1,
+                            dnumber2: this.number2
+                        }
+                    },
+                    props:{
+                        number1: Number,
+                        number2: Number
+                    },
+                    methods:{
+                        num1Input(event){
+                            this.dnumber1=parseFloat(event.target.value);
+                            this.$emit('num1change',this.dnumber1);
+                        },
+                        num2Input(event){
+                            this.dnumber2=parseFloat(event.target.value);
+                            this.$emit('num2change',this.dnumber2);
+                        }
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

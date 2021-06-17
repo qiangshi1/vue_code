@@ -1,0 +1,118 @@
+<!-- promise的链式编程 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+
+<body>
+    <div id="app">
+    </div>
+    <script>
+        // 链式编程的第一种写法
+        // console.log('链式编程的第一种写法');
+        // new Promise((resolve, reject) => {
+        //     setTimeout(() => { //第一层
+        //         data = '111';
+        //         resolve(data)
+        //     }, 2000)
+        // }).then(data => {
+        //     console.log(data);
+        //     return new Promise((resolve, reject) => {
+        //         setTimeout(() => { //第二层
+        //             resolve(data + '222')
+        //         }, 2000)
+        //     }).then(data => {
+        //         console.log(data);
+        //         return new Promise((resolve, reject) => {
+        //             setTimeout(() => { //第三层
+        //                 resolve(data + '333')
+        //             }, 2000)
+        //         }).then(data => {
+        //             console.log(data);
+        //             // return
+        //         })
+        //     })
+        // })
+
+        // 链式编程的第二种写法, 其实就是第一种写法的简写
+        // console.log('链式编程的第二种写法, 其实就是第一种写法的简写');
+        // new Promise((resolve, reject) => {
+        //     setTimeout(() => { //第一层
+        //         data = '111';
+        //         resolve(data)
+        //     }, 2000)
+        // }).then(data => {
+        //     console.log(data);
+        //     // (data + '222')应该等价于上面的(resolve, reject) =>{} 但这种简写不能写函数, 只能写表达式? 
+        //     // 下面的(data + '333')也是同理
+        //     return Promise.resolve(data + '222').then(data => {
+        //         console.log(data);
+        //         return Promise.resolve(data + '333').then(data => {
+        //             console.log(data);
+        //             // return
+        //         })
+        //     })
+        // })
+        // 链式编程的第三种写法, 其实就是第二种写法的简写, 省略掉Promise.resolve
+        // console.log('链式编程的第三种写法, 其实就是第二种写法的简写');
+        // new Promise((resolve, reject) => {
+        //     setTimeout(() => {
+        //         data = '111';
+        //         resolve(data)
+        //     }, 2000)
+        // }).then(data => { 
+        //     console.log(data);
+        //     return data + '222'
+        // }).then(data => {
+        //     console.log(data);
+        //     return data + '333'
+        // }).then(data => {
+        //     console.log(data);
+        // })
+
+        // 链式编程的第四种写法, 加上catch
+        // console.log('链式编程的第四种写法, 加上catch');
+        // new Promise((resolve, reject) => {
+        //     setTimeout(() => {
+        //         data = '111';
+        //         // resolve(data)
+        //         reject(data)
+        //     }, 2000)
+        // }).then(data => { 
+        //     console.log(data);
+        //     return data + '222'
+        // }).then(data => {
+        //     console.log(data);
+        //     return data + '333'
+        // }).then(data => {
+        //     console.log(data);
+        // }).catch(data => {
+        //     console.log('error: '+data);
+        // })
+
+         // 链式编程的第五种写法, catch的简写
+         console.log('链式编程的第五种写法, catch的简写, 未完成!!!');
+        new Promise((resolve, reject) => {
+            setTimeout(() => {
+                data = '111';
+                resolve(data)
+                // reject(data)
+            }, 2000)
+        }).then(data => { 
+            console.log(data);
+            return data + '222'
+        }).then(data => {
+            console.log(data);
+            return data + '333'
+        }).then(data => {
+            console.log(data);
+        }).catch(data => {
+            console.log('error: '+data);
+        })
+    </script>
+</body>
+
+</html>

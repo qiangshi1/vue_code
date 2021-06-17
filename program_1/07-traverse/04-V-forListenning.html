@@ -1,0 +1,46 @@
+<!-- 对数组的操作哪些是响应式的-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <!-- app.items.push()是响应式的 -->
+        <!-- app.items.push('a','b','c') push()可以输入多个参数 它里边也有变参模板哈-->
+        <!-- app.items[0]是非响应式的 -->
+        <!-- app.items.pop()是响应式的 -->
+        <!-- app.items.shift()是响应式的 -->
+        <!-- app.items.unshift()是响应式的 -->
+        <!-- app.items.splice(2,1)是响应式的 -->
+        <!-- splice的用法较多 -->
+        <!-- app.items.splice(操作位置,空(删除所有元素)/个数(删除元素个数),元素(追加元素)) -->
+        <!-- app.items.sort()是响应式的 -->
+        <!-- app.items.reverse()是响应式的 -->
+        <!-- Vue.set(app.items,0,'b')是响应式的 -->
+        <ul>
+            <!-- 绑定式的话相同的key会报错 -->
+            <!-- <li v-for="i in items" :key="i">{{i}}</li> -->
+            <li v-for="i in items">{{i}}</li>
+        </ul>
+    </div>
+    <script src="../js/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#app',  
+            data: {
+                items:[
+                    'why',
+                    'yes',
+                    'OK',
+                    'go'
+                ]
+            },
+            methods: {
+            }
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!-- 组件化开发 -->
+<!-- 组件的最基本使用 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+    <!--组件化有助于代码的复用 -->
+        <!-- <h2>我是标题</h2>
+        <p>你好啊</p>
+        <p>李银河</p>
+
+        <h2>我是标题</h2>
+        <p>月亮</p>
+        <p>与六便士</p>
+
+        <h2>我是标题</h2>
+        <p>萧瑟秋风今又是</p>
+        <p>换了人间</p> -->
+
+        <!-- 3. 使用组建 -->
+        <my-cpn></my-cpn>
+        <my-cpn></my-cpn>
+    </div>
+    <script src="../js/vue.js"></script>
+    <script>
+        // ES6中 ``也可以包含字符串，并且它可以换行
+        // 1. 创建组建
+        const cpnC = Vue.extend({
+            template:
+            `<div>
+                <h2>我是标题</h2>
+                <p>我是内容</p>
+                <p>我是内容2</p>
+            </div>`
+        })
+        // 2. 注册组件
+        Vue.component('my-cpn',cpnC)
+        const app = new Vue({
+            el: '#app',  
+            data: { 
+            },
+            methods: {
+            }
+        })
+    </script>
+</body>
+
+</html>

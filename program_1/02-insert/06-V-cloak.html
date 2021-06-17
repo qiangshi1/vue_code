@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <!-- 用style可以取消闪动，其实使用出现代替闪动 -->
+    <!-- 原理还是不是很清楚 -->
+    <style> 
+        [v-cloak]{
+            display: none;
+        }
+    </style>
+</head><a href=""></a>
+
+<body>
+    <div id='app' v-cloak>
+        <!-- 1 会出现闪动的效果 v-cloak会解决该问题-->
+        <h2>{{message}}</h2>
+    </div>
+    <script src="../js/vue.js"></script>
+    <script>
+        setTimeout(function(){
+        const app = new Vue({
+            el: '#app',
+            data: {
+                message: '你好啊',
+            },
+            methods: {
+            }
+        })},1000) //2 延迟1s，闪动更加明显
+    </script>
+</body>
+
+</html>

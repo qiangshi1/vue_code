@@ -1,0 +1,54 @@
+<!-- slot编译作用域 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- 怎样获取子组件的pLanguages -->
+        <cpn></cpn>
+        <cpn>
+            <!-- 2.5.x以下必须用template -->
+            <!-- 用子组件的数据，自定义格式 -->
+            <template slot-scope="slot">
+                <span v-for="item in slot.languages">{{item}} - </span>
+            </template>
+        </cpn>
+    </div>
+
+    <template id="cpn">
+        <div>
+            <slot :languages="pLanguages">
+                <ul>
+                    <li v-for="item in pLanguages">{{item}}</li>
+                </ul>
+            </slot>
+        </div>
+    </template>
+
+    <script src="../js/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#app',  
+            data: { 
+            },
+            methods: {
+            },
+            components: {
+                cpn: {
+                    template: "#cpn",
+                    data(){
+                        return {
+                            pLanguages: ['C++','B',"C#",'C','Objective-C']
+                        }
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

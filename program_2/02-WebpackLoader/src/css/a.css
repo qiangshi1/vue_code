@@ -1,0 +1,8 @@
+body{
+    background-color: red; 
+    /* 小于limit的话，图片会编译成base64 */
+    background-image: url(../pic/01-pic.jpg);
+    /* 大于limit的话，还需要file-loader */
+    /* limit在webpack.config.js中配置 */
+    background-image: url(../pic/02-pic.jpg);
+}

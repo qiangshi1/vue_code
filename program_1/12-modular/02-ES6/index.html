@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+    </div>
+    <!-- 非模块化包含，能够看到全局变量fang -->
+    <script src="js1_fang.js"></script>
+    <!-- 模块化包含 -->
+    <!-- 会有问题: Access to script at 'file:///E:/%E5%AD%A6%E4%B9%A0/vue_code/program_1/12-modular/02-ES6/ming.js' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: http, data, chrome-extension, edge, https, chrome-untrusted.\n Failed to load resource: net::ERR_FAILED -->
+    <!-- 有一个遇到相同问题的: https://blog.csdn.net/SugarXiXixi/article/details/109130140 -->
+    <!-- 一种解决方法: vscode 中用liveserver -->
+    <!-- 看不到变量hong -->
+    <!-- 通过导出导入可以实现变量的传递 -->
+    <!-- 导入的话这里script没有先后要求 -->
+    <script src="js2_hong.js" type="module"></script>
+    <script src="js3_ming.js" type="module"></script>
+    <script src="js4_qian.js" type="module"></script>
+
+</body>
+</html>

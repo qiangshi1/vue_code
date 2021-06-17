@@ -1,0 +1,63 @@
+<!--  组件之间的通信 父组件->子组件 --> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <!-- 3. v-bind绑定父子组件的数据映射 -->
+        <cpn v-bind:cmovies="movies" v-bind:cmessage="message"></cpn>
+        <cpn v-bind:cmovies="movies" v-bind:cmessage="message"></cpn>
+        <cpn v-bind:cmovies="movies" v-bind:cmessage="message"></cpn>
+    </div>
+    <!-- 2. 在template中使用props数据（定义数据出现的格式） -->
+    <template id="cpn">
+        <div>
+            <h2>{{cmessage}}</h2>
+            <p>{{cmovies}}</p>
+        </div>
+    </template>
+
+    <script src="../js/vue.js"></script>
+    <script>
+        // 1. 在props里定义变量名字，该变量会接受来自父组件的数据
+        const cpn ={
+            template: '#cpn',
+            // props的第1种写法
+            // props: ['cmovies','cmessage'],
+            // props的第2种写法,这种写法限制类型
+            // props: {
+            //     cmovies: Array,
+            //     cmessage: String,
+            // },
+            // props的第3种写法,这种写法限制类型/默认值/是否必须传值,可以加入很多的限制吗？
+            props: {
+                cmovies: {
+                    type: Array,
+                    default: ['a','b','c'],
+                    required: true
+                },
+                cmessage: {
+                    type: String,
+                    default: 'default'
+                },
+            },
+        }
+        const app = new Vue({
+            el: '#app',  
+            data: { 
+                message: '你好啊',
+                movies: ['海王','天王','冥王']
+            },
+            methods: {
+            },
+            components: {
+                cpn,
+            }
+        })
+    </script>
+</body>
+
+</html>

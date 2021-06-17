@@ -1,0 +1,78 @@
+<!-- v-on的修饰符 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <!-- stop -->
+        <div @click="divClicked">
+            a_div
+            <button @click="btnClicked">a_button</button>
+        </div>
+        <!-- .stop阻止了divClicked -->
+        <div @click="divClicked">
+            a_div2
+            <button @click.stop="btnClicked">a_button2</button>
+        </div>
+        <!-- prevent -->
+        <!-- 它执行了submitClicked回调， 同时跳转到了baidu-->
+        <div>
+            <form action="baidu">
+                <input type="submit" value="提交" @click="submitClicked"/>
+            </form>
+        </div>
+        <!-- 它执行了submitClicked回调， 不跳转到了baidu-->
+        <!-- 禁止了默认回调 -->
+        <div>
+            <form action="baidu">
+                <input type="submit" value="提交2" @click.prevent="submitClicked"/>
+            </form>
+        </div>
+        <!-- keyCode | keyAlias 监听键盘-->
+        <!-- 每次抬起键盘都会执行回调 -->
+        <div>
+            <input type="text" @keyup="keyUpped"/>
+        </div>
+        <!-- 只有敲enter之后才会执行回调 -->
+        <div>
+            <input type="text" @keyup.enter="keyUpped"/>
+        </div>
+        <!-- naive-->
+
+        <!-- once -->
+        <!-- 只第一次点击的时候有回调 -->
+        <div>
+            <button @click.once="btnClicked">a_button3</button>
+        </div>
+    </div>
+    <script src="../js/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#app',  
+            data: { 
+                counter: 0
+            },
+            methods: {
+                divClicked(event){
+                    console.log('div',event);
+                },
+                btnClicked(event){
+                    console.log('btn',event);
+                },
+                submitClicked(event){
+                    console.log('submit',event);
+  
+                },
+                keyUpped(event){
+                    console.log('key up',event);
+  
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!-- v-on的参数问题 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <h2>{{counter}}</h2>
+        <!--  -->
+        <button @click="increment">+</button>
+        <!-- 事件，无参数小括号可以省略 -->
+        <button @click="increment()">+</button>
+        <!-- 回调可以传入参数 -->
+        <button @click="add(5)">add</button>
+        <!-- 如果函数有参数，但没有传入参数，同时写上了小括号，参数被设为undefined -->
+        <button @click="add()">add</button>
+        <!-- 如果函数有参数，但没有传入参数，但没有写上小括号，默认传入参数当前事件 -->
+        <button @click="add">add</button>
+        <!-- 如果函数既需要事件有需要参数的写法,注意$的写法 -->
+        <button @click="exp(5,$event)">exp</button>
+
+    </div>
+    <script src="../js/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#app',  
+            data: { 
+                counter: 0
+            },
+            methods: {
+                increment(){
+                    this.counter++;
+                },
+                add(added){
+                    this.counter+=added;
+                    console.log(added);
+                },
+                exp(added,event){
+                    this.counter+=added;
+                    console.log(added,event);
+                },
+            }
+        })
+    </script>
+</body>
+
+</html>

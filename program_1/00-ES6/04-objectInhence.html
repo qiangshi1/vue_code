@@ -1,0 +1,55 @@
+<!-- 对象字面量增强语法 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+<body>
+    <!-- <script src="../js/vue.js"></script> -->
+    <script>
+        //常规写法
+        const obj={
+            name: 'shi',
+            age: 18,
+            run: function(){
+                console.log('running');
+            },
+            eat: function(){
+                console.log('eating');
+            }
+        }
+        // 1属性增强
+        // ES5属性增强语法
+        const name2='shi'
+        const age2=18
+        const obj2={
+            name2: name2,
+            age2: age2
+        }
+        // ES6属性增强语法，语法糖？
+        const name3='shi'
+        const age3=18
+        const obj3={
+            name3,
+            age3
+        }
+        // 2函数增强, 所以属性+函数=对象？
+        // ES6函数增强
+        const obj4={
+            name: 'shi',
+            age: 18,
+            run(){
+                console.log('running');
+            },
+            eat(){
+                console.log('eating');
+            }
+        }
+
+        //
+
+    </script>
+</body>
+
+</html>

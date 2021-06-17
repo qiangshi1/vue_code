@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <!-- <h2 :style="{key: value}">{{message}}</h2> -->
+        <!-- font-size也可以写成fontSize -->
+        <!-- style是否可以认为是一个封装的class，类似于html和xml的关系 -->
+        <!-- 关注50px的写法，注意常量加单引号，vue的限制 -->
+        <h2 :style="{fontSize: thisSize}">{{message}}</h2>
+        <!-- 同上 -->
+        <h2 :style="{fontSize: thisSize2+ 'px'}">{{message}}</h2>
+        <!-- 增加color属性 -->
+        <h2 :style="{fontSize: thisSize,color: thisColor}">{{message}}</h2>
+        <!-- 增加background-color属性 -->
+        <h2 :style="{fontSize: thisSize,color: thisColor, backgroundColor: 'blue'}">{{message}}</h2>
+        <!-- 同上 -->
+        <h2 :style="getStyles()">{{message}}</h2>
+    </div>
+    <script src="../js/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#app',  
+            data: { 
+                message: '你好啊',
+                thisSize: '50px',
+                thisSize2: 50,
+                thisColor: 'red'
+            },
+            methods: {
+                getStyles: function(){
+                    return {fontSize: this.thisSize,color: this.thisColor,backgroundColor: 'blue'}
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

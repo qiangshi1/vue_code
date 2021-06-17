@@ -1,0 +1,40 @@
+<!-- v-model 双向绑定的原理 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <!-- v-bind是单向绑定，message->input -->
+        <input type="text" v-bind:value="message"/>
+        {{message}}
+        
+        <!-- v-bind+v-on监听事件，可以是实现v-bind功能，这或许是v-bind的实现原理 -->
+        <!-- 第一种v-on的实现方法 -->
+        <!-- valueChange没有参数而methods中它的声明有参数，默认传入event -->
+        <!-- <input type="text" v-bind:value="message" v-on:input="valueChange"/> -->
+
+        <!-- 第二种v-on的实现方法 -->
+        <input type="text" v-bind:value="message" v-on:input="message=$event.target.value"/>
+        <!-- 所以v-model其实是一个语法糖 -->
+        {{message}}
+    </div>
+    <script src="../js/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#app',  
+            data: { 
+                message: '你好啊'
+            },
+            methods: {
+                valueChange(event){
+                    this.message=event.target.value;
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

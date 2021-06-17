@@ -1,0 +1,40 @@
+<!-- 遍历对象v-for -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <!-- 获取值（没有键） -->
+        <ul>
+            <li v-for="i in obj">{{i}}</li>
+        </ul>
+        <!-- 获取键和值 -->
+        <ul>
+            <li v-for="(value,key) in obj">{{key}}: {{value}}</li>
+        </ul>
+        <!-- 获取键/值和index -->
+        <ul>
+            <li v-for="(value,key, index) in obj">{{key}}: {{value}} {{index}}</li>
+        </ul>
+    </div>
+    <script src="../js/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#app',  
+            data: {
+                obj: {
+                    name: 'why',
+                    age: 18,
+                    gender: true
+                }
+            },
+            methods: {
+            }
+        })
+    </script>
+</body>
+
+</html>

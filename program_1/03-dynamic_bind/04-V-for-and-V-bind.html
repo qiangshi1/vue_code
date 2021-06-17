@@ -1,0 +1,27 @@
+<!-- 小作业 -->
+<!-- 还是不会 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+    <ul>
+        <li v-for="m in movies" :class="['Active', 'Line']" @click="Active=!Active,Line=!Line">{{m}}</li>
+    </ul>    
+    </div>
+    <script src="../js/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#app',  
+            data: { 
+                movies: ['海王','海尔兄弟', '火影忍者','进击的巨人'],
+                Active: false,
+                Line: false
+            },
+        })
+    </script>
+</body>
+</html>

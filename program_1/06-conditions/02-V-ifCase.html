@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <span v-if="isUser">
+            <label for="username">用户账号</label>
+            <!-- 加key可以取消复用 -->
+            <!-- <input type="text" id="username" placeholder="用户账号" @keyup.enter="usernameInput"/>  -->
+            <input type="text" id="username" placeholder="用户账号" @keyup.enter="usernameInput" key="Bufuyong"/> 
+        </span>
+        <span v-else>
+            <label for="email">用户邮箱</label>
+            <input type="text" id="email" placeholder="用户邮箱"/> 
+        </span>
+        <button @click="isUser=!isUser">点击切换</button>
+    </div>
+    <script src="../js/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#app',  
+            data: { 
+                isUser: true,
+                username: 'shi',
+                email: 'xx@xx.com'
+            },
+            methods: {
+                usernameInput(){
+                    this.username=value;
+                    console.log('key up',event);
+
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

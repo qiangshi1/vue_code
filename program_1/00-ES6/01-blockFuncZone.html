@@ -1,0 +1,59 @@
+<!-- 块级作用域 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+<body>
+    <button>按钮一</button>
+    <button>按钮二</button>
+    <button>按钮三</button>
+    <button>按钮四</button>
+    <button>按钮五</button>
+    
+    <button>按钮六</button>
+    <button>按钮七</button>
+    <button>按钮八</button>
+    <button>按钮九</button>
+    <button>按钮十</button>
+    <script src="../js/vue.js"></script>
+    <script>
+        // var 没有块级作用域，会造成命名污染
+        {
+            var name="why";
+            console.log(name);
+        }
+        console.log(name);
+        const app = new Vue({
+            el: '#app',  
+            data: { 
+            },
+            methods: {
+            }
+        })
+        // 另一个现象，i永远等于5 // 以前(ES5)的解决方案，闭包
+        var btns=document.getElementsByTagName('button');
+        for (var i=0;i<btns.length-5;i++){
+            btns[i].addEventListener('click',function(){
+                console.log('第'+i+'个被点击')
+            })
+        }
+        //闭包的解释： 函数有作用域，如：
+        // 所以闭包就是函数封装吗
+        function getName(name){
+            console.log(name);
+        }
+        getName('yes') //会输出yes，因为函数作用域优先于全局作用域
+
+        //ES6的解决方法: 用const和let替换var
+        const btns2=document.getElementsByTagName('button');
+        for (let i=5;i<btns2.length;i++){
+            btns2[i].addEventListener('click',function(){
+                console.log('第'+i+'个被点击')
+            })
+        }
+    </script>
+</body>
+
+</html>

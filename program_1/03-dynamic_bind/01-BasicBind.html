@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <!-- 错误的用法 -->
+        <!-- <img src={{imgURL}} alt=""> -->
+        <!-- v-bind 动态绑定src属性，把src的值(imgURL)认为变量,然后才能在vue data中找 -->
+        <img v-bind:src="imgURL" alt=""/>
+        <a v-bind:href="aHref">百度一下</a>
+        <!-- 语法糖的写法 -->
+        
+        <img :src="imgURL" alt=""/>
+        <a :href="aHref">百度一下</a>
+
+        
+    </div>
+    <script src="../js/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#app',  
+            data: { 
+                imgURL: 'https://dlweb.sogoucdn.com/pcsearch/web/index/images/logo_880x280_06c7476.png?v=628ed034',
+                aHref: 'http://www.baidu.com'
+            },
+            methods: {
+            }
+        })
+    </script>
+</body>
+
+</html>

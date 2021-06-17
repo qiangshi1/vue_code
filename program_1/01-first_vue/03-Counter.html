@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+
+<body>
+
+    <div id="app">
+        <h2>当前计数： {{counter}}</h2>
+        <button v-on:click="counter++">+</button>
+        <button v-on:click="counter--">-</button>
+        <!-- 函数 在Vue methods中定义-->
+        <button v-on:click="increment">+</button>
+        <button v-on:click="decrement">-</button>
+        <!-- 语法糖 代码的简写-->
+        <button @click="increment">+</button>
+        <button @click="decrement">-</button>
+    </div>
+    <script src="../js/vue.js"></script>
+    <script>
+        //obj的成员能够被vue中的this捕获
+        //它是一种代理机制
+        const obj = {
+            counter: 0
+        }
+        const app = new Vue({
+            el: '#app',  //挂载
+            data: obj,
+            methods: {
+                increment: function () {
+                    console.log('increment被执行!');
+                    // counter无法找到
+                    this.counter++;
+                },
+                decrement: function () {
+                    console.log('decrement被执行!');
+                    this.counter--;
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,262 @@
+{
+    "res": {
+        "data": {
+            "banner": {
+                "list": [{
+                        "background": "b1",
+                        "link": "http://192.168.1.5:8001/b1.jpg",
+                        "image": "http://192.168.1.5:8001/b1.jpg"
+                    },
+                    {
+                        "background": "b2",
+                        "link": "http://192.168.1.5:8001/b2.jpeg",
+                        "image": "http://192.168.1.5:8001/b2.jpeg"
+                    }, {
+                        "background": "b3",
+                        "link": "http://192.168.1.5:8001/b3.jpeg",
+                        "image": "http://192.168.1.5:8001/b3.jpeg"
+                    }
+                ]
+            },
+            "recommend": {
+                "list": [{
+                        "link": "http://192.168.1.5:8001/r1.png",
+                        "image": "http://192.168.1.5:8001/r1.png",
+                        "title": "十点抢券"
+                    },
+                    {
+                        "link": "http://localhost:8001/r2.png",
+                        "image": "http://localhost:8001/r2.png",
+                        "title": "好物特卖"
+                    },
+                    {
+                        "link": "http://localhost:8001/r3.png",
+                        "image": "http://localhost:8001/r3.png",
+                        "title": "内购福利"
+                    },
+                    {
+                        "link": "http://localhost:8001/r4.png",
+                        "image": "http://localhost:8001/r4.png",
+                        "title": "初秋上新"
+                    }
+                ]
+            }
+        }
+    },
+    "goods-pop-1": {
+        "list": [
+            {"image": "http://192.168.1.5:8001/pop01.png", "title":　"ONLY夏季新款甜美方领泡泡袖格子法式复古收腰显瘦连衣裙", "cfavos": 1},
+            {"image": "http://192.168.1.5:8001/pop02.png", "title":　"ZARA 夏季新款 女装 人造珠宝吊带连衣裙", "cfavos": 88},
+            {"image": "http://192.168.1.5:8001/pop03.png", "title":　"ZARA 夏季新款 女装 印花衬衣式连衣裙", "cfavos": 195},
+            {"image": "http://192.168.1.5:8001/pop04.png", "title":　"优衣库 【设计师合作款】女装 花式吊", "cfavos": 557},
+            {"image": "http://192.168.1.5:8001/pop05.png", "title":　"ONLY夏季新款法式复古泡泡袖格子腰带中款连衣裙女", "cfavos": 1094},
+            {"image": "http://192.168.1.5:8001/pop06.png", "title":　"Vero Moda春夏刺绣珠片装饰双层薄纱连衣裙女", "cfavos": 738},
+            {"image": "http://192.168.1.5:8001/pop07.png", "title":　"SNIDEL2021春夏新品优雅荷叶袖包扣印花百褶雪纺连衣裙", "cfavos": 222},
+            {"image": "http://192.168.1.5:8001/pop08.png", "title":　"Vero Moda春夏女团显瘦修身泡泡袖仙女气质连衣裙女", "cfavos": 779},
+            {"image": "http://192.168.1.5:8001/pop09.png", "title":　"ALEXANDER WANG/亚历山大王 女士休闲方正版型高捻棉修身t恤白色", "cfavos": 483},
+            {"image": "http://192.168.1.5:8001/pop10.png", "title":　"sandro2021春夏新款女装浪漫印花大翻领泡泡袖连衣裙", "cfavos": 808}
+        ]
+    },
+    "goods-pop-2": {
+        "list": [
+            {"image": "http://192.168.1.5:8001/pop11.png", "title":　"徐紫茵同款DAZZLE地素 春夏小雏菊法式泡泡袖中长连衣裙", "cfavos": 193},
+            {"image": "http://192.168.1.5:8001/pop12.png", "title":　"MAXRIENY2021夏季新款短袖t恤女潮蕾丝波点衬衫网纱泡泡袖雪纺衫", "cfavos": 264},
+            {"image": "http://192.168.1.5:8001/pop13.png", "title":　"MOCO2021春季新款环保醋酸料短款西装中长连衣裙两件套 摩安珂", "cfavos": 1884},
+            {"image": "http://192.168.1.5:8001/pop14.png", "title":　"小黑裙MOCO春秋新品学院风Polo领针织连衣裙小妖精裙 摩安珂", "cfavos": 1912},
+            {"image": "http://192.168.1.5:8001/pop15.png", "title":　"YINER音儿女装2020夏季新款时尚船领木耳边短袖碎花收腰连衣裙", "cfavos": 1150},
+            {"image": "http://192.168.1.5:8001/pop16.png", "title":　"太平鸟黑色修身T恤裙女2021夏季新款短袖圆领收腰连衣裙简约抽褶", "cfavos": 120},
+            {"image": "http://192.168.1.5:8001/pop17.png", "title":　"丹慕妮尔抽象印花雪纺连衣裙女夏2021新款荷叶边高端名媛气质裙子", "cfavos": 470},
+            {"image": "http://192.168.1.5:8001/pop18.png", "title":　"YINER音儿女装2020夏季新款插肩袖系带收腰不对称边连衣裙", "cfavos": 706},
+            {"image": "http://192.168.1.5:8001/pop19.png", "title":　"LACOSTE法国鳄鱼女装夏季休闲透气法式修身短袖连衣裙女", "cfavos": 1642},
+            {"image": "http://192.168.1.5:8001/pop20.png", "title":　"SNIDEL2021春夏新品气质POLO领雪纺拼接针织收腰连衣裙", "cfavos": 31}
+        ]
+    },
+    "goods-pop-3": {
+        "list": [
+            {"image": "http://192.168.1.5:8001/pop21.png", "title":　"Theory 新品女装 羊毛混纺西装连衣裙", "cfavos": 86},
+            {"image": "http://192.168.1.5:8001/pop22.png", "title":　"ICICLE之禾女装21春夏新款印花V领长连衣裙", "cfavos": 338},
+            {"image": "http://192.168.1.5:8001/pop23.png", "title":　"DPLAY德帕拉夏季新款泡泡袖收腰紫色碎花法式连衣裙复古气质长裙", "cfavos": 1298},
+            {"image": "http://192.168.1.5:8001/pop24.png", "title":　"菲梦伊桑蚕真丝遮肚子显瘦连衣裙女夏季温柔风气质女神范包臀裙子", "cfavos": 1463},
+            {"image": "http://192.168.1.5:8001/pop25.png", "title":　"【迪士尼花木兰联名】太平鸟刺绣黑色连衣裙女盘扣旗袍2020夏新款", "cfavos": 1295},
+            {"image": "http://192.168.1.5:8001/pop26.png", "title":　"DAZZLE地素 春装蓝精灵联名系列刺绣串珠T恤女", "cfavos": 902},
+            {"image": "http://192.168.1.5:8001/pop27.png", "title":　"【618预售】MK 2021春季新品白色小香风短袖针织连衣裙女装", "cfavos": 1094},
+            {"image": "http://192.168.1.5:8001/pop28.png", "title":　"【商场同款】JNBY/江南布衣春款时尚休闲圆领T恤5K8610080", "cfavos": 593},
+            {"image": "http://192.168.1.5:8001/pop29.png", "title":　"LACOSTE法国鳄鱼女装夏季时尚法式宽松竖条纹短袖连衣裙女", "cfavos": 1489},
+            {"image": "http://192.168.1.5:8001/pop30.png", "title":　"李沁同款诗凡黎裙子夏季2021新款气质碎花韩版修身泡泡袖连衣裙女", "cfavos": 378}
+        ]
+    },
+    "goods-pop-4": {
+        "list": [
+            {"image": "http://192.168.1.5:8001/pop31.png", "title":　"self-portrait 多色蕾丝v领泡泡袖短袖连衣裙中长裙", "cfavos": 1374},
+            {"image": "http://192.168.1.5:8001/pop32.png", "title":　"影儿诗篇2020秋季新款小雏菊吊带修身连衣裙针织开衫两件套", "cfavos": 367},
+            {"image": "http://192.168.1.5:8001/pop33.png", "title":　"隆缘裳V领连衣裙缎面2021夏修身显瘦收腰连袖中长束腰a字裙女", "cfavos": 737},
+            {"image": "http://192.168.1.5:8001/pop34.png", "title":　"UR2021春夏新品女装复古文艺格纹蝴蝶结宝藏连衣裙", "cfavos": 1251},
+            {"image": "http://192.168.1.5:8001/pop35.png", "title":　"edition斜襟休闲短裤女夏款设计感显瘦百搭直筒西裤", "cfavos": 1560},
+            {"image": "http://192.168.1.5:8001/pop36.png", "title":　"ALEXANDER WANG/亚历山大王 女士半高领徽标贴饰连衣裙黑色", "cfavos": 162},
+            {"image": "http://192.168.1.5:8001/pop37.png", "title":　"MOUSSY 春夏新品圆领迪士尼印花宽松短袖T恤010DAY90-5860", "cfavos": 1859},
+            {"image": "http://192.168.1.5:8001/pop38.png", "title":　"【Hello Kitty联名】乐町冰氧酷黑科技T短袖T恤女2021春季新款女", "cfavos": 1551},
+            {"image": "http://192.168.1.5:8001/pop39.png", "title":　"edition短裤女2021春新款羊毛精纺翻脚西装裤宽松直筒休闲裤", "cfavos": 974},
+            {"image": "http://192.168.1.5:8001/pop40.png", "title":　"dzzit地素 春秋专柜新款宽松BF风闪片条纹短袖衬衫女", "cfavos": 872}
+        ]
+    },
+    "goods-pop-5": {
+        "list": [
+            {"image": "http://192.168.1.5:8001/pop41.png", "title":　"UR秋季新品女装格纹木耳边蛋糕无袖连衣裙", "cfavos": 894},
+            {"image": "http://192.168.1.5:8001/pop42.png", "title":　"Tommy 女装经典优雅棉质小绣标短袖POLO领修身连衣裙", "cfavos": 613},
+            {"image": "http://192.168.1.5:8001/pop43.png", "title":　"MAXRIENY夏季新款复古名媛小香风连衣裙蕾丝长裙度假裙仙女裙波点", "cfavos": 1017},
+            {"image": "http://192.168.1.5:8001/pop44.png", "title":　"Massimo Dutti女装 商场同款 长版斑马纹简约风女士连衣裙", "cfavos": 1022},
+            {"image": "http://192.168.1.5:8001/pop45.png", "title":　"Miss Sixty夏季钩花高收腰白色荷叶边连衣裙女", "cfavos": 1635},
+            {"image": "http://192.168.1.5:8001/pop46.png", "title":　"Miss Sixty春季印花高收腰系带碎花圆领长裙子长袖雪纺连衣裙女", "cfavos": 1590},
+            {"image": "http://192.168.1.5:8001/pop47.png", "title":　"诗凡黎甜美连衣裙女2021新款夏泫雅风法式长款小雏菊吊带碎花裙女", "cfavos": 1289},
+            {"image": "http://192.168.1.5:8001/pop48.png", "title":　"魅霓虹2021夏季新款高档刺绣香云纱桑蚕丝绣花重磅真丝连衣裙大牌", "cfavos": 757},
+            {"image": "http://192.168.1.5:8001/pop49.png", "title":　"韩都衣舍职业装连衣裙女2021夏新款轻熟御姐风气质高腰短裙", "cfavos": 1623},
+            {"image": "http://192.168.1.5:8001/pop50.png", "title":　"范思蓝恩200940V领连衣裙女夏季收腰显瘦气质女神范复古法式长裙", "cfavos": 1066}
+        ]
+    },
+
+    "goods-new-1": {
+        "list": [
+            {"image": "http://192.168.1.5:8001/new01.png", "title":　"波点雪纺连衣裙女2021年夏天新款大码气质爆款遮肚温柔风妈妈裙子", "cfavos": 701},
+            {"image": "http://192.168.1.5:8001/new02.png", "title":　"Ralph Lauren/拉夫劳伦女装 经典款棉质圆领T恤", "cfavos": 1878},
+            {"image": "http://192.168.1.5:8001/new03.png", "title":　"Amii法式气质黑色连衣裙2021夏季新款不对称收腰西装裙衬衫裙女", "cfavos": 1752},
+            {"image": "http://192.168.1.5:8001/new04.png", "title":　"薇娅推荐 Chrisou by Dan欧阳丹设计师联名款 双开拉链爱心衬衫女", "cfavos": 1100},
+            {"image": "http://192.168.1.5:8001/new05.png", "title":　"阔色黑色短袖t恤2021春夏新款宽松女设计感小众内搭短款上衣", "cfavos": 1245},
+            {"image": "http://192.168.1.5:8001/new06.png", "title":　"衣品天成连衣裙女夏2021新款收腰气质法式白色短袖初恋少女中长裙", "cfavos": 1174},
+            {"image": "http://192.168.1.5:8001/new07.png", "title":　"范思蓝恩短袖T恤女夏宽松韩版2020年夏季新款肌理感褶皱上衣ins潮", "cfavos": 415},
+            {"image": "http://192.168.1.5:8001/new08.png", "title":　"宽松大码V领真丝上衣女2021夏季新款黑白条纹印花中袖桑蚕丝T恤", "cfavos": 602},
+            {"image": "http://192.168.1.5:8001/new09.png", "title":　"连衣裙女2021夏新款遮肚中年40岁贵夫人妈妈衬衫裙洋气棉麻风裙子", "cfavos": 942},
+            {"image": "http://192.168.1.5:8001/new10.png", "title":　"TCH潮牌连衣裙女宽松字母烫金休闲T恤夏季新款T192308A02", "cfavos": 461}
+        ]
+    },
+    "goods-new-2": {
+        "list": [
+            {"image": "http://192.168.1.5:8001/new11.png", "title":　"冰丝阔腿裤", "cfavos": 689},
+            {"image": "http://192.168.1.5:8001/new12.png", "title":　"021春季新款百搭学生韩版休闲ins网红板鞋", "cfavos": 390},
+            {"image": "http://192.168.1.5:8001/new13.png", "title":　"微胖女生穿搭大码女装胖妹妹夏新款套装洋气减龄显瘦两件套连衣裙", "cfavos": 452},
+            {"image": "http://192.168.1.5:8001/new14.png", "title":　"K02绿色连衣裙8890", "cfavos": 341},
+            {"image": "http://192.168.1.5:8001/new15.png", "title":　"牛油果绿爱心印花条纹冰丝针织短袖", "cfavos": 455},
+            {"image": "http://192.168.1.5:8001/new16.png", "title":　"炸街欧范小心机酷girl潮T恤", "cfavos": 871},
+            {"image": "http://192.168.1.5:8001/new17.png", "title":　"盐系减龄显白刺绣polo上衣*1993", "cfavos": 622},
+            {"image": "http://192.168.1.5:8001/new18.png", "title":　"ISHE新款连衣裙", "cfavos": 1847},
+            {"image": "http://192.168.1.5:8001/new19.png", "title":　"自制必入棉软糖果色半身裙*505", "cfavos": 860},
+            {"image": "http://192.168.1.5:8001/new20.png", "title":　"百搭宽松韩版立体时尚T恤潮上衣W445", "cfavos": 370}
+        ]
+    },
+    "goods-new-3": {
+        "list": [
+            {"image": "http://192.168.1.5:8001/new21.png", "title":　"【长腿特派员】瑜儿原创自制骑士裤", "cfavos": 1810},
+            {"image": "http://192.168.1.5:8001/new22.png", "title":　"SS111139百搭衬衫新款韩版", "cfavos": 1959},
+            {"image": "http://192.168.1.5:8001/new23.png", "title":　"港味夏季新款内搭韩版外穿冰丝无袖T恤打底吊带上衣针织小背心女", "cfavos": 878},
+            {"image": "http://192.168.1.5:8001/new24.png", "title":　"C17棕色西装连衣裙", "cfavos": 222},
+            {"image": "http://192.168.1.5:8001/new25.png", "title":　"韩版冰丝修身显瘦针织衫", "cfavos": 516},
+            {"image": "http://192.168.1.5:8001/new26.png", "title":　"大码女装胖妹妹春季新款套装女洋气时尚遮肚休闲裤两件套(预售)", "cfavos": 817},
+            {"image": "http://192.168.1.5:8001/new27.png", "title":　"女2020新款高帮板鞋韩版ulzzang学生", "cfavos": 1190},
+            {"image": "http://192.168.1.5:8001/new28.png", "title":　"裤女夏季薄款高腰裤子宽松直筒裤休闲裤拖地裤西装裤", "cfavos": 524},
+            {"image": "http://192.168.1.5:8001/new29.png", "title":　"（拍二免一）夏季薄款简约冰丝安全裤防走光", "cfavos": 1206},
+            {"image": "http://192.168.1.5:8001/new30.png", "title":　"实拍百搭高腰显瘦气质拖地阔腿裤", "cfavos": 1422}
+        ]
+    },
+    "goods-new-4": {
+        "list": [
+            {"image": "http://192.168.1.5:8001/new31.png", "title":　"高腰显瘦九分烟管西装休闲裤H703", "cfavos": 443},
+            {"image": "http://192.168.1.5:8001/new32.png", "title":　"洋气烫花卡通宽松显瘦T恤QS407", "cfavos": 235},
+            {"image": "http://192.168.1.5:8001/new33.png", "title":　"自制小清新温柔泡泡袖上衣*1821", "cfavos": 593},
+            {"image": "http://192.168.1.5:8001/new34.png", "title":　"夏新款高腰垂顺显瘦薄款阔腿裤", "cfavos": 638},
+            {"image": "http://192.168.1.5:8001/new35.png", "title":　"W蛋糕纱纱半身裙#318G", "cfavos": 848},
+            {"image": "http://192.168.1.5:8001/new36.png", "title":　"高腰撞色西装阔腿裤宽松休闲垂感西装拖地裤", "cfavos": 1016},
+            {"image": "http://192.168.1.5:8001/new37.png", "title":　"气质小黑裙女2021夏装潮流短袖裙子连衣裙", "cfavos": 171},
+            {"image": "http://192.168.1.5:8001/new38.png", "title":　"春季韩版圆领高腰短款卫衣女ins春装上衣", "cfavos": 525},
+            {"image": "http://192.168.1.5:8001/new39.png", "title":　"IRT[CCL02]新款百搭时尚凉鞋", "cfavos": 1602},
+            {"image": "http://192.168.1.5:8001/new40.png", "title":　"设计感小众拉链针织开衫上衣女", "cfavos": 58}
+        ]
+    },
+    "goods-new-5": {
+        "list": [
+            {"image": "http://192.168.1.5:8001/new41.png", "title":　"言身寸IDERID公主风蓬蓬裙中长款纱裙连衣裙A摆", "cfavos": 1858},
+            {"image": "http://192.168.1.5:8001/new42.png", "title":　"薄款女生网纱板鞋软底小白跑鞋百搭网面圆头超纤皮", "cfavos": 1461},
+            {"image": "http://192.168.1.5:8001/new43.png", "title":　"减龄洋气两件套适合胯大腿粗的胖女人遮肚显瘦套装夏", "cfavos": 977},
+            {"image": "http://192.168.1.5:8001/new44.png", "title":　"清仓福利！镂空设计感短款针织衫", "cfavos": 1157},
+            {"image": "http://192.168.1.5:8001/new45.png", "title":　"毛须大长腿牛仔热裤", "cfavos": 475},
+            {"image": "http://192.168.1.5:8001/new46.png", "title":　"2021夏季新款收腰显瘦V领衬衫百搭上衣", "cfavos": 918},
+            {"image": "http://192.168.1.5:8001/new47.png", "title":　"小个子超仙西双版纳度假法式吊带短袖连衣裙", "cfavos": 1926},
+            {"image": "http://192.168.1.5:8001/new48.png", "title":　"纯棉撞色条纹短袖T恤女夏季新款ins百搭方领上衣潮", "cfavos": 1094},
+            {"image": "http://192.168.1.5:8001/new49.png", "title":　"040113A宝哥自留款！巨显白显瘦轻薄凉爽蓝色系碎花裙", "cfavos": 1042},
+            {"image": "http://192.168.1.5:8001/new50.png", "title":　"M1270 春季新款 两件套时尚连衣裙", "cfavos": 463}
+        ]
+    },
+
+    "goods-sel-1": {
+        "list": [
+            {"image": "http://192.168.1.5:8001/sel01.png", "title":　"冰丝阔腿裤女春夏高腰垂感休闲裤显瘦拖地裤", "cfavos": 978},
+            {"image": "http://192.168.1.5:8001/sel02.png", "title":　"缎面无袖内搭打底衫外穿性感背心", "cfavos": 1248},
+            {"image": "http://192.168.1.5:8001/sel03.png", "title":　"高定神仙仙女裙（只能手洗）", "cfavos": 1358},
+            {"image": "http://192.168.1.5:8001/sel04.png", "title":　"诚可原创 2021春夏新品 时尚高端连衣裙", "cfavos": 791},
+            {"image": "http://192.168.1.5:8001/sel05.png", "title":　"洋气短款减龄显瘦小心机针织衫", "cfavos": 735},
+            {"image": "http://192.168.1.5:8001/sel06.png", "title":　"春款时尚贴标束脚卫裤休闲裤QS138", "cfavos": 1976},
+            {"image": "http://192.168.1.5:8001/sel07.png", "title":　"21小香风女法式v领薄款撞色短袖上衣0619", "cfavos": 75},
+            {"image": "http://192.168.1.5:8001/sel08.png", "title":　"大码/单2021新款胖妹妹洋气显瘦减龄遮肉防晒衬衫短裤三件套", "cfavos": 1770},
+            {"image": "http://192.168.1.5:8001/sel09.png", "title":　"T10白色收腰泡泡袖连衣裙", "cfavos": 1827},
+            {"image": "http://192.168.1.5:8001/sel10.png", "title":　"复古字母小心机宽松透气防晒长袖T恤QS3215", "cfavos": 1592}
+        ]
+    },
+    "goods-sel-2": {
+        "list": [
+            {"image": "http://192.168.1.5:8001/sel11.png", "title":　"新品新疆棉中国风明星同款情侣T恤", "cfavos": 197},
+            {"image": "http://192.168.1.5:8001/sel12.png", "title":　"021新款高腰显瘦休闲中裤直筒百搭西装五分裤", "cfavos": 524},
+            {"image": "http://192.168.1.5:8001/sel13.png", "title":　"垂感2021春夏季新款百搭宽松显瘦直筒拖地西装裤", "cfavos": 671},
+            {"image": "http://192.168.1.5:8001/sel14.png", "title":　"泫雅风复古新款碎花短袖T恤（3-30天发货）", "cfavos": 1359},
+            {"image": "http://192.168.1.5:8001/sel15.png", "title":　"Agsdon112034小白鞋女网面透气舒适鞋子休闲时尚板鞋", "cfavos": 273},
+            {"image": "http://192.168.1.5:8001/sel16.png", "title":　"冰丝阔腿裤女春夏高腰垂感休闲裤显瘦拖地裤", "cfavos": 1442},
+            {"image": "http://192.168.1.5:8001/sel17.png", "title":　"2021新款雪纺皱衬衫20141283", "cfavos": 214},
+            {"image": "http://192.168.1.5:8001/sel18.png", "title":　"撞色仿亚麻冰丝长袖开衫空调衫", "cfavos": 1308},
+            {"image": "http://192.168.1.5:8001/sel19.png", "title":　"双排扣假两件裤裙", "cfavos": 988},
+            {"image": "http://192.168.1.5:8001/sel20.png", "title":　"新款白月关气质性感女神吊带连衣裙", "cfavos": 1558}
+        ]
+    },
+    "goods-sel-3": {
+        "list": [
+            {"image": "http://192.168.1.5:8001/sel21.png", "title":　"新款休闲运动减龄宽松工装背带裤+T恤两件套", "cfavos": 1430},
+            {"image": "http://192.168.1.5:8001/sel22.png", "title":　"夏季新款紫色抽绳褶皱上衣女宽松韩版百搭显瘦短袖T恤", "cfavos": 1807},
+            {"image": "http://192.168.1.5:8001/sel23.png", "title":　"透气厚底百搭女鞋网红超火运动休闲ins潮", "cfavos": 1782},
+            {"image": "http://192.168.1.5:8001/sel24.png", "title":　"夏装韩版不规则纯色修身半袖短款上衣ins潮", "cfavos": 668},
+            {"image": "http://192.168.1.5:8001/sel25.png", "title":　"港风chic小个子显高炸街可盐可甜牛仔职业两件套装裙子女", "cfavos": 1397},
+            {"image": "http://192.168.1.5:8001/sel26.png", "title":　"男女运动裤女薄款透气弹宽松休闲裤XY1351", "cfavos": 396},
+            {"image": "http://192.168.1.5:8001/sel27.png", "title":　"网红垂感花纹直筒长裤", "cfavos": 61},
+            {"image": "http://192.168.1.5:8001/sel28.png", "title":　"斜裁藏肉垂坠大摆喇叭半身裙", "cfavos": 1488},
+            {"image": "http://192.168.1.5:8001/sel29.png", "title":　"春夏款宽松小个子韩版网红显瘦老爹九分小脚西装裤088", "cfavos": 1000},
+            {"image": "http://192.168.1.5:8001/sel30.png", "title":　"白色衬衫长袖宽松中长款外穿薄款防晒衣服ins潮", "cfavos": 960}
+        ]
+    },
+    "goods-sel-4": {
+        "list": [
+            {"image": "http://192.168.1.5:8001/sel31.png", "title":　"04D-422精致改良旗袍连衣裙", "cfavos": 1809},
+            {"image": "http://192.168.1.5:8001/sel32.png", "title":　"时尚直筒阔腿裤两件套女学生韩版含棉短袖T恤女", "cfavos": 1220},
+            {"image": "http://192.168.1.5:8001/sel33.png", "title":　"搭v领薄款设计感小众无袖polo针织上衣t恤女", "cfavos": 1235},
+            {"image": "http://192.168.1.5:8001/sel34.png", "title":　"胖瘦都能穿的防晒字母T恤", "cfavos": 1719},
+            {"image": "http://192.168.1.5:8001/sel35.png", "title":　"甜心爱疯了好穿遮丑豆腐裤（3-30天发货）", "cfavos": 0},
+            {"image": "http://192.168.1.5:8001/sel36.png", "title":　"专治腿粗 字母ON空气感休闲裤", "cfavos": 0},
+            {"image": "http://192.168.1.5:8001/sel37.png", "title":　"鲨鱼皮五分打底短裤女提臀芭比骑行裤QS1115", "cfavos": 0},
+            {"image": "http://192.168.1.5:8001/sel38.png", "title":　"【CO冰丝T】刺绣字母双拉链冰丝针织开衫空调衫", "cfavos": 0},
+            {"image": "http://192.168.1.5:8001/sel39.png", "title":　"设计感小众拉链针织开衫上衣女", "cfavos": 1},
+            {"image": "http://192.168.1.5:8001/sel40.png", "title":　"力荐 修饰好身材衬衫裙夏季新款桔梗裙法式温柔风初恋裙子白色连衣裙女", "cfavos": 3}
+        ]
+    },
+    "goods-sel-5": {
+        "list": [
+            {"image": "http://192.168.1.5:8001/sel41.png", "title":　"高腰侧开叉牛仔半身裙女夏季2021a字辣妹包臀长裙子ins潮", "cfavos": 1},
+            {"image": "http://192.168.1.5:8001/sel42.png", "title":　"20B-7961欧洲站品质款牛仔裙", "cfavos": 2},
+            {"image": "http://192.168.1.5:8001/sel43.png", "title":　"网红格子半身裙", "cfavos": 11},
+            {"image": "http://192.168.1.5:8001/sel44.png", "title":　"【田园风】文艺泡泡袖小花T", "cfavos": 22},
+            {"image": "http://192.168.1.5:8001/sel45.png", "title":　"港味不规则小心机设计高腰显瘦短袖T恤女潮", "cfavos": 11},
+            {"image": "http://192.168.1.5:8001/sel46.png", "title":　"六六Studio 纯欲旗袍改良版复古修身开叉连衣裙", "cfavos": 19},
+            {"image": "http://192.168.1.5:8001/sel47.png", "title":　"夏季薄款高腰西装拖地休闲裤女H771", "cfavos": 9},
+            {"image": "http://192.168.1.5:8001/sel48.png", "title":　"全棉牛仔微弹衬衫 牛仔半身裙两件套", "cfavos": 0},
+            {"image": "http://192.168.1.5:8001/sel49.png", "title":　"【安娜】法式高腰连衣裙RRBL", "cfavos": 0},
+            {"image": "http://192.168.1.5:8001/sel50.png", "title":　"小个子超仙甜美碎花裙减龄气质连衣裙", "cfavos": 0}
+        ]
+    },
+    "profile": {
+        "name": "测试json",
+        "img": "./img1.jpeg"
+    }
+}

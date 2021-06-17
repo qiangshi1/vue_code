@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+
+<body>
+    <div id="app">
+        <h2>{{fullName}}</h2>
+        <!-- 同上 -->
+        <h2>{{fullName2}}</h2>
+    </div>
+    <script src="../js/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#app',
+            data: {
+                firstName: 'qiang',
+                lastName: 'shi'
+            },
+            //计算属性一般没有set方法
+            // 所以计算属性是调用get方法吗
+            // 计算属性无需加小括号
+            computed: {
+                fullName: {
+                    get: function(){
+                        return this.firstName+' '+this.lastName
+                    },
+                    // 但是可以有set方法
+                    set: function(newValue){
+                        console.log('This is set.');
+                        const names =newValue.split(' ');
+                        this.firstName=names[0];
+                        this.lastName=names[1];
+                    }
+                },
+                fullName2: function(){
+                    return this.firstName+' '+this.lastName
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!-- 块级作用域2 ES5闭包详解 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+<body>
+    <button>按钮一</button>
+    <button>按钮二</button>
+    <button>按钮三</button>
+    <button>按钮四</button>
+    <button>按钮五</button>
+    <button>按钮六</button>
+    <script src="../js/vue.js"></script>
+    <script>
+        var btns=document.getElementsByTagName('button');
+        // for (var i=0;i<btns.length-5;i++){
+        //     btns[i].addEventListener('click',function(){
+        //         console.log('第'+i+'个被点击')
+        //     })
+        // }
+        // ES5没有使用闭包，错误的方式
+        {
+            var i=0;
+            btns[i].addEventListener('click',function(){
+                console.log('第'+i+'个被点击')
+            })     
+        }
+        {
+            i=1;
+            btns[i].addEventListener('click',function(){
+                console.log('第'+i+'个被点击')
+            })     
+        }
+        {
+            i=2;
+            btns[i].addEventListener('click',function(){
+                console.log('第'+i+'个被点击')
+            })     
+        }   
+        // ES5使用闭包，正确,不过不知道为什么按老师的匿名函数的写法会报错
+        {
+            i=3;
+            function u(i){
+                btns[i].addEventListener('click',function(){
+                console.log('第'+i+'个被点击')
+            })  
+            }
+            u(i)
+        }
+        {
+            i=4;
+            u(i)
+        }
+        {
+            i=5;
+            u(i)
+        }
+    </script>
+</body>
+
+</html>

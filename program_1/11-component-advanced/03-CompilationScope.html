@@ -1,0 +1,45 @@
+<!-- 编译作用域 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- isShow看Vue的data -->
+        <cpn v-show="isShow"></cpn>
+    </div>
+
+    <template id="cpn">
+        <div>
+            <p>我是子组件</p>
+        </div>
+    </template>
+
+    <script src="../js/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#app',  
+            data: { 
+                message: '你好啊',
+                isShow: true
+            },
+            methods: {
+            },
+            components: {
+                cpn: {
+                    template: "#cpn",
+                    data(){
+                        return {
+                            isShow: false
+                        }
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

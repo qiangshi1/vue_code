@@ -1,0 +1,36 @@
+<!-- promise的all -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+
+<body>
+    <div id="app">
+    </div>
+    <script>
+        // console.log('');
+        let var1=0;
+        let var2=0;
+        Promise.all([ //all里边是数组
+            new Promise((resolve, reject)=>{
+                setTimeout(() => {
+                    var1=1;
+                    resolve(var1)
+                }, 1000)
+            }),
+            new Promise((resolve, reject)=>{
+                setTimeout(() => {
+                    var2=2;
+                    resolve(var2)
+                }, 3000)
+            })
+        ]).then(results=>{ //then会等待all里边所有的数组执行完毕, result是上边数组里边所有的resolve()参数
+            console.log(results);
+        })
+    </script>
+</body>
+
+</html>

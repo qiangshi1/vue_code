@@ -1,0 +1,42 @@
+<!-- promise的其他形式 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+
+<body>
+    <div id="app">
+    </div>
+    <script>
+
+        // 第一种写法
+        new Promise((resolve, reject) => {
+            setTimeout(() => {
+                // 注意resolve和reject只能执行一个
+                resolve('Hello world 1 !')
+                // reject('error 1 !')
+            }, 2000)
+        }).then(data =>{
+            console.log(data);
+        }).catch(
+            err =>{
+            console.log(err);
+        })
+        
+        // 第二种写法
+        new Promise((resolve, reject) => {
+            setTimeout(() => {
+                // 注意resolve和reject只能执行一个
+                resolve('Hello world 2 !')
+                // reject('error 2 !')
+            }, 2000)
+        }).then(data =>{console.log(data);},err =>{console.log(err);})
+            
+        
+    </script>
+</body>
+
+</html>

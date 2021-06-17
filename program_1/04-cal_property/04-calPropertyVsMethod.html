@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- 方法实现,执行一次 -->
+        <h2>{{getFullName()}}</h2>
+        <h2>{{getFullName()}}</h2>
+        <h2>{{getFullName()}}</h2>
+        <h2>{{getFullName()}}</h2>
+        <!-- 计算属性实现 -->
+        <!-- 计算属性,只执行一次,效率更高 -->
+        <!-- 一般多使用计算属性，少使用方法 -->
+        <h2>{{fullName}}</h2>
+        <h2>{{fullName}}</h2>
+        <h2>{{fullName}}</h2>
+        <h2>{{fullName}}</h2>
+    </div>
+    <script src="../js/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#app',
+            data: {
+                firstName: 'qiang',
+                lastName: 'shi'
+            },
+            computed: {
+                fullName: {
+                    get: function(){
+                        console.log('times in computed');
+                        return this.firstName+' '+this.lastName
+                    }
+                }
+            },
+            methods:{
+                getFullName(){
+                    console.log('times in methods');
+                    return this.firstName+' '+this.lastName
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!-- 组件之中使用Vue数据2 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <cpn></cpn>
+        <cpn></cpn>
+        <cpn></cpn>
+    </div>
+    <script type="text/x-template" id="my-cpn">
+    <div>
+        <div>
+            <h2>当前计数: {{counter}}</h2>
+            <button @click="increment">+</button>
+            <button @click="decrement">-</button>
+        </div>
+    </div>
+    </script>
+    <script src="../js/vue.js"></script>
+    <script>
+        Vue.component('cpn',{
+            template: `#my-cpn`,
+            // 为了确保组件之间数据独立，所以用函数？
+            data() {
+                return {
+                    counter: 0
+                }
+            },
+            methods: {
+                increment() {
+                    this.counter++;
+                },
+                decrement() {
+                    this.counter--;
+                }
+            }
+        })
+        const app = new Vue({
+            el: '#app',  
+            data: { 
+            },
+            methods: {
+            },
+            components: {
+            }
+        })
+    </script>
+</body>
+
+</html>

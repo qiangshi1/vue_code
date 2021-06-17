@@ -1,0 +1,26 @@
+<!-- 块级作用域2 ES5闭包详解 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+<body>
+    <script src="../js/vue.js"></script>
+    <script>
+        //1. 错误，初始化时const必须赋值
+        const a_var
+        //2. 错误，const再不能赋值
+        const a_var2=1
+        a_var2=2
+        //3. 常量内部属性可以修改,这一点和C++一样
+        const a_var3={
+            name: 'shi',
+            age: 18
+        }
+        a_var3.age=20
+
+    </script>
+</body>
+
+</html>

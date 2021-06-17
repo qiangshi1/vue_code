@@ -1,0 +1,49 @@
+<!-- v-model 结合 select -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <!-- 单选 -->
+        <select name="fruit" id=""  v-model="fruit"/>
+            <option value="苹果">苹果</option>
+            <option value="香蕉">香蕉</option>
+        </select>
+        <h2>{{fruit}}</h2>
+        
+        <!-- 多选 -->
+        <!-- 注意是按住ctrl建多选 -->
+        <select name="fruits"  v-model="fruits" multiple>
+            <option value="苹果">苹果</option>
+            <option value="香蕉">香蕉</option>
+        </select>
+            <h2>{{fruits}}</h2>
+            <!-- 值绑定 -->
+            <!-- 老师使用checkbox演示的，我是用select实现的 -->
+            <!-- <label v-for="item in fruits2"> -->
+            <select  name="fruits2"  v-model="fruits2" multiple>
+            <!-- 所以标签外是moustache语法，标签内是v-xx绑定vue data中的变量？ -->
+            <option v-for="item in initFruits" v-bind:value="item">{{item}}</option>
+        </select>
+        <h2>{{fruits2}}</h2>    
+ 
+    </div>
+    <script src="../js/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#app',  
+            data: { 
+                fruit: '香蕉',
+                fruits: ['香蕉'],
+                initFruits: ['香蕉','苹果','梨','橘子'],
+                fruits2: ['香蕉','苹果','梨','橘子']
+                
+            }
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "01-primarywebpack",
+  "version": "1.0.0",
+  "description": "shi test 1.",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "author": "Shi"
+}

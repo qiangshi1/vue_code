@@ -1,0 +1,43 @@
+<!-- 一个案例,同时也是之前的作业,class v-for click-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <style>
+        .active{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <ul>
+            <!-- ===等于 -->
+            <li v-for="(item, index) in items" :class="{active: index===currentIndex}" @click="onClick(index)">{{index}}.{{item}}</li>
+        </ul>
+    </div>
+    <script src="../js/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#app',  
+            data: {
+                items:[
+                    'why',
+                    'yes',
+                    'OK',
+                    'go'
+                ],
+                currentIndex: 0
+            },
+            methods: {
+                onClick(index){
+                    this.currentIndex=index;
+                    console.log(index);
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!-- slot 插槽 具名-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+
+<body>
+    <div id="app">
+        <cpn></cpn>
+        <!-- 这种用法是替换三个插槽 取名字以解决-->
+        <cpn><button>插入button</button></cpn>
+        <!-- 具名插槽指定slot -->
+        <cpn><button slot="下边">插入button</button></cpn>
+    </div>
+
+    <template id="cpn">
+        <div>
+            <slot><span>左边</span></slot>
+            <slot><span>中间</span></slot>
+            <slot><span>右边</span></slot>
+            <div>
+                <slot name="下边"></slot>
+            </div>
+        </div>
+    </template>
+
+    <script src="../js/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#app',  
+            data: { 
+            },
+            methods: {
+            },
+            components: {
+                cpn: {
+                    template: "#cpn",
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

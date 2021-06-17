@@ -1,0 +1,122 @@
+<!-- 测试better-scroll, 这个文件better-scroll.esm.js是在01-supermall/node_modules/better-scroll/dist/中 -->
+<!-- 01-supermall/node_modules/better-scroll/dist/中有3个better-scroll文件, 注意不要用错了 -->
+<!-- 这份代码是可以看到弹簧效果的 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Title</title>
+  <style>
+    .wrapper {
+      height: 350px;
+      background-color: red;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <!-- 注意wrapper下只能有一个元素, wrapper才能用BScroll, 当然wrapper可以修改名字. -->
+  <div class="wrapper">
+    <ul class="content">
+      <li>列表数据1</li>
+      <li>列表数据2</li>
+      <li>列表数据3</li>
+      <li>列表数据4</li>
+      <li>列表数据5</li>
+      <li>列表数据6</li>
+      <li>列表数据7</li>
+      <li>列表数据8</li>
+      <li>列表数据9</li>
+      <li>列表数据10</li>
+      <li>列表数据11</li>
+      <li>列表数据12</li>
+      <li>列表数据13</li>
+      <li>列表数据14</li>
+      <li>列表数据15</li>
+      <li>列表数据16</li>
+      <li>列表数据17</li>
+      <li>列表数据18</li>
+      <li>列表数据19</li>
+      <li>列表数据20</li>
+      <li>列表数据21</li>
+      <li>列表数据22</li>
+      <li>列表数据23</li>
+      <li>列表数据24</li>
+      <li>列表数据25</li>
+      <li>列表数据26</li>
+      <li>列表数据27</li>
+      <li>列表数据28</li>
+      <li>列表数据29</li>
+      <li>列表数据30</li>
+      <li>列表数据31</li>
+      <li>列表数据32</li>
+      <li>列表数据33</li>
+      <li>列表数据34</li>
+      <li>列表数据35</li>
+      <li>列表数据36</li>
+      <li>列表数据37</li>
+      <li>列表数据38</li>
+      <li>列表数据39</li>
+      <li>列表数据40</li>
+      <li>列表数据41</li>
+      <li>列表数据42</li>
+      <li>列表数据43</li>
+      <li>列表数据44</li>
+      <li>列表数据45</li>
+      <li>列表数据46</li>
+      <li>列表数据47</li>
+      <li>列表数据48</li>
+      <li>列表数据49</li>
+      <li>列表数据50</li>
+      <li>列表数据51</li>
+      <li>列表数据52</li>
+      <li>列表数据53</li>
+      <li>列表数据54</li>
+      <li>列表数据55</li>
+      <li>列表数据56</li>
+      <li>列表数据57</li>
+      <li>列表数据58</li>
+      <li>列表数据59</li>
+      <li>列表数据60</li>
+    </ul>
+  </div>
+  <script type="module">
+
+    // // 1.
+    // import BScroll from "./better-scroll.esm.js"
+    // const bscroll = new BScroll(document.querySelector(".wrapper"));
+    // // 默认情况下BScroll是不能监听滚动位置的
+    // bscroll.on('scroll', (position)=>{
+    //   console.log(position);
+    // });
+
+    // // 2. 监听滚动位置: probeType: 2或者3(0和1都是不监听的)
+    // probeType: 2: 在手指滚动过程中监听, 手指离开之后的惯性滚动不监听; probeType: 3: 手指滚动和惯性滚动都监听. 
+    // import BScroll from "./better-scroll.esm.js"
+    // const bscroll = new BScroll(document.querySelector(".wrapper"), {
+    //   probeType: 3, 
+    // });
+    // bscroll.on('scroll', (position)=>{
+    //   console.log(position);
+    // });
+
+    // // 3. 监听滚动到底部
+    import BScroll from "./better-scroll.esm.js"
+    const bscroll = new BScroll(document.querySelector(".wrapper"), {
+      probeType: 3, 
+      pullUpLoad: true, //这里一定要写, 才能使用bscroll.on('pullingUp', ...
+    });
+    // // 3.1 这种写法只能监听一次. 
+    // bscroll.on('pullingUp', ()=>{
+    //   console.log("上拉加载更多! ");
+    // })
+    // 3.2 这种写法可以监听多次
+    bscroll.on('pullingUp', ()=>{
+      console.log("上拉加载更多! ");
+      bscroll.finishPullUp();  // 主要是这一行起作用. 
+    })
+
+  </script>
+</body>
+
+</html>

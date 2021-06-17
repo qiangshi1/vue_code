@@ -1,0 +1,29 @@
+<!-- clock 斗篷的意思 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head><a href=""></a>
+
+<body>
+    <div id='app'>
+        <h2>{{message}}, 李银河</h2>
+        <!-- v-pre 原本显示{{message}}-->
+        <h2 v-pre>{{message}}</h2>
+    </div>
+    <script src="../js/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#app',
+            data: {
+                message: '你好啊',
+            },
+            methods: {
+            }
+        })
+    </script>
+</body>
+
+</html>

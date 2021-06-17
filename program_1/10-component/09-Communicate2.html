@@ -1,0 +1,58 @@
+<!--  组件之间的通信 父组件->子组件 --> 
+<!-- props的驼峰标识 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+
+        <cpn v-bind:cmovies="movies" v-bind:c-message="message"></cpn>
+        <cpn v-bind:cmovies="movies" v-bind:c-message="message"></cpn>
+        <cpn v-bind:cmovies="movies" v-bind:c-message="message"></cpn>
+    </div>
+
+    <template id="cpn">
+        <div>
+            <h2>{{cMessage}}</h2>
+            <p>{{cmovies}}</p>
+        </div>
+    </template>
+
+    <script src="../js/vue.js"></script>
+    <script>
+
+        const cpn ={
+            template: '#cpn',
+            props: {
+                // cmovies 要在 <cpn v-bind:cmovies="movies"处使用，而<cpn v-bind:cmovies="movies" v-bind:cmessage="message"></cpn>在html中，目前Vue版本不支持驼峰
+                cmovies: {
+                    type: Array,
+                    default: ['a','b','c'],
+                    required: true
+                },
+                //强行用驼峰的方法: cMessage->c-message
+                cMessage: {
+                    type: String,
+                    default: 'default'
+                },
+            },
+        }
+        const app = new Vue({
+            el: '#app',  
+            data: { 
+                message: '你好啊',
+                movies: ['海王','天王','冥王']
+            },
+            methods: {
+            },
+            components: {
+                cpn,
+            }
+        })
+    </script>
+</body>
+
+</html>

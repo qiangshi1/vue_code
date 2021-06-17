@@ -1,0 +1,46 @@
+<!-- 组件之中使用Vue数据 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <cpn></cpn>
+    </div>
+    <!-- 分离形式的模板写法 -->
+    <!-- 组件不能直接访问Vue实例之中的数据 -->
+    <script type="text/x-template" id="my-cpn3">
+    <div>
+        <h2>{{title}}</h2>
+        <p>我是内容</p>
+        <p>我是内容2</p>
+    </div>
+
+    </script>
+    <script src="../js/vue.js"></script>
+    <script>
+        Vue.component('cpn',{
+            template: `#my-cpn3`,
+            // 在这里写数据,
+            // data必须是函数的写法
+            data() {
+                return {
+                    title: `我是标题`
+                }
+            }
+        })
+        const app = new Vue({
+            el: '#app',  
+            data: { 
+            },
+            methods: {
+            },
+            components: {
+            }
+        })
+    </script>
+</body>
+
+</html>

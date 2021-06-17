@@ -1,0 +1,59 @@
+<!-- 全局组件和局部组件 -->
+<!-- 实际开发之中更会使用局部组件 -->
+<!-- 组件的查找循序：有限局部组件 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <!-- 3. 组件的使用 -->
+        <my-cpn></my-cpn>
+        <my-cpn></my-cpn>
+        <!-- mycpn2 是局部组件，只能在app中使用 -->
+        <mycpn2></my-cpn2>
+    </div>
+    <div id="app2">
+        <!-- 3. 组件的使用 -->
+        <my-cpn></my-cpn>
+        <my-cpn></my-cpn>
+        <!-- mycpn2 是局部组件，只能在app中使用所以在app2中使用会报错 -->
+        <mycpn2></my-cpn2>
+    </div>
+    <script src="../js/vue.js"></script>
+    <script>
+        // ES6中 ``也可以包含字符串，并且它可以换行
+        // 1. 创建组建
+        const cpnC = Vue.extend({
+            template:
+            `<div>
+                <h2>我是标题</h2>
+                <p>我是内容</p>
+                <p>我是内容2</p>
+            </div>`
+        })
+        // 2. 注册组件
+        // 这种注册的方式是全局注册，类似于类的静态成员？
+        Vue.component('my-cpn',cpnC)
+        const app = new Vue({
+            el: '#app',  
+            data: { 
+            },
+            methods: {
+            },
+            components: {
+                // 2. 注册组件
+                // 这种注册的方式是局部注册，类似于类的动态成员？
+                // mycpn2是标签名
+                mycpn2: cpnC,
+            }
+        })
+        const app2 = new Vue({
+            el: '#app2',  
+        })
+    </script>
+</body>
+
+</html>
